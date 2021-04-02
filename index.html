@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Guess the Number</title>
+</head>
+<body>
+    <div class="container">
+        <h1>guess the number</h1>
+        <p>We have selected a random number between 1 - 10. See if you can guess it.</p>
+        <div id="inputData">
+            <label id="labelData" for="">Enter a guess : </label>
+            <input id="takeInputData" type="text" placeholder="number">
+        </div>
+        <button id="submitBtn">SUBMIT</button>
+    </div>
+
+    <!-- Popup page Win -->
+    <section>
+        <div id="popupContainer">
+            <img id="trophy-img1" src="images/trophy.png" alt="trophy">
+            <img id="trophy-img2" src="images/trophy.png" alt="trophy">
+            <img id="trophy-img3" src="images/trophy.png" alt="trophy">
+            <button id="popupBtn">X</button>
+            <p id="greet">Congratulations,</p>
+            <p>You Win</p>
+        </div>
+    </section>
+
+    <!-- Popup page Lose -->
+    <section id="loseGame">
+        <div id="popupContainerLose">
+            <button id="loseGameBtn">X</button>
+            <img src="images/giphy.gif" alt="">
+            <h1>Sorry,<span>try again</span</h1>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
